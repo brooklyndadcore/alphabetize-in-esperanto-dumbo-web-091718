@@ -1,6 +1,6 @@
 def alphabetize(arr)
   espo = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
   
-  new_arr = arr.sort_by(&espo)
-  return new_arr
+  return %w(arr).sort_by{|word| &espo}
+  
 end
